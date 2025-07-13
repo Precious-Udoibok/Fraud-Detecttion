@@ -108,7 +108,7 @@ function App() {
     console.log('Sending data to API:', numericFormData); // Log the data
 
     try {
-      const response = await axios.post('http://localhost:8000/predict', numericFormData, {
+      const response = await axios.post('https://fraud-detecttion.onrender.com/predict', numericFormData, {
         headers: {
           'Content-Type': 'application/json', // Ensure the correct header is sent
         },
